@@ -1,0 +1,303 @@
+/* Google Font */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(135deg,#5B2EFF,#7B2FF7,#9D4EDD);
+    color:#fff;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    position:fixed;
+    top:0;
+    left:0;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+    z-index:1000;
+}
+
+.logo h2{
+    font-size:30px;
+    font-weight:700;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    margin-left:25px;
+    font-size:18px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#FFD43B;
+}
+
+.btn{
+    background:#FFD43B;
+    color:black;
+    padding:10px 22px;
+    border-radius:25px;
+    font-weight:600;
+}
+
+.btn:hover{
+    background:white;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:120px 8% 60px;
+}
+
+.hero-text{
+    width:55%;
+}
+
+.hero-text h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero-text span{
+    color:#FFD43B;
+}
+
+.hero-text p{
+    font-size:18px;
+    line-height:32px;
+    margin-bottom:25px;
+}
+
+.hero-text h3{
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.hero-text ul{
+    margin-left:20px;
+}
+
+.hero-text li{
+    margin:12px 0;
+    font-size:18px;
+}
+
+.hero button{
+    margin-top:30px;
+    padding:15px 40px;
+    font-size:18px;
+    border:none;
+    border-radius:30px;
+    background:#FFD43B;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.hero button:hover{
+    transform:scale(1.08);
+    background:white;
+}
+
+.hero-image{
+    width:40%;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+}
+
+/* ================= ABOUT ================= */
+
+.about{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.about h2{
+    font-size:40px;
+    margin-bottom:25px;
+}
+
+.about p{
+    font-size:18px;
+    line-height:32px;
+}
+
+/* ================= FEATURES ================= */
+
+.feature{
+    padding:80px 8%;
+}
+
+.feature h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(10px);
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-12px);
+}
+
+.card i{
+    font-size:55px;
+    color:#FFD43B;
+    margin-bottom:20px;
+}
+
+.card h3{
+    margin-bottom:15px;
+    font-size:25px;
+}
+
+.card p{
+    line-height:28px;
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+    padding:80px 8%;
+}
+
+.contact h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.contact-box{
+    width:60%;
+    margin:auto;
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    padding:40px;
+}
+
+.contact-box p{
+    margin:18px 0;
+    font-size:20px;
+}
+
+.contact-box i{
+    color:#FFD43B;
+    margin-right:10px;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    margin-top:80px;
+    background:rgba(0,0,0,.25);
+    text-align:center;
+    padding:35px;
+}
+
+footer h3{
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+footer h4{
+    margin:10px 0;
+    color:#FFD43B;
+}
+
+footer p{
+    font-size:17px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:992px){
+
+header{
+    flex-direction:column;
+}
+
+nav{
+    margin-top:15px;
+}
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text{
+    width:100%;
+}
+
+.hero-image{
+    width:90%;
+    margin-top:40px;
+}
+
+.contact-box{
+    width:100%;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero-text h1{
+    font-size:40px;
+}
+
+.about h2,
+.feature h2,
+.contact h2{
+    font-size:32px;
+}
+
+.logo h2{
+    font-size:24px;
+}
+
+nav a{
+    display:block;
+    margin:10px 0;
+}
+
+}
